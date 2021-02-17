@@ -13,6 +13,7 @@ def autolabel(rects, ax):
                 ha='center', va='bottom')
 
 def WordAnalysis(decryptedSentence):
+    decryptedSentence+= " "
     aBunchOfWords = decryptedSentence
     wordList = []
     wordCount = []
@@ -175,7 +176,7 @@ if(Cipher_Mode == "E"):
   
 else:
     #I've put them all in one for demonstration purposes
-    eMessage = Decrypt()
+    eMessage = Decrypt() 
     #AutoDecrypt()
     #AutoDecryptWithWordCheck()
     WordAnalysis(eMessage)
